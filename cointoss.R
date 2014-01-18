@@ -3,7 +3,8 @@ cointoss = function(numtosses)
   #function computes payoff streams for two contingencies (given random coinflips):
   #1: number of consecutive heads (HH)
   #2: number of HTs (HT)
-  #3: i.e.: sequence of 'HTHHH' would count as 1 HT and 2 HH
+  # i.e.: sequence of 'HTHHH' would count as 1 HT and 2 HH
+  #returns dataframe of payoff per flip and two series of cumulative payoffs
   
   #generate sequence of coin tosses. 1 = H; -1 = T
   toss_seq = sample(c(1,-1),numtosses,replace=TRUE)
