@@ -17,7 +17,7 @@ cointoss = function(numtosses)
   i = 1
   while(i <= numtosses-1)
   {
-    if(toss_seq[i+1] == toss_seq[i]){
+    if(toss_seq[i+1] == 1 & toss_seq[i] == 1){
       
       strat_HH[i] = 1
       strat_HT[i] = 0
